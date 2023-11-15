@@ -6,15 +6,33 @@
   "scripts": {
     "ts-node": "ts-node",
     "tsc": "tsc",
-    "clean:tsc": "rm tsconfig.tsbuildinfo"
+    "clean:tsc": "rm tsconfig.tsbuildinfo",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "uuid": "^9.0.1"
+  },
   "devDependencies": {
+    "@swc/core": "^1.3.96",
+    "@swc/jest": "^0.2.29",
+    "@types/jest": "^29.5.8",
+    "@types/lodash": "^4.14.201",
     "@types/node": "14.14.31",
+    "@types/uuid": "^9.0.7",
+    "jest": "^29.7.0",
+    "lodash": "^4.17.21",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gparra12/codeflix-admin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gparra12/codeflix-admin/issues"
+  },
+  "homepage": "https://github.com/gparra12/codeflix-admin#readme"
 }
