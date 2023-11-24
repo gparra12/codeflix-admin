@@ -29,7 +29,7 @@ export type SearchResultProps<E extends Entity, Filter> = {
   filter: Filter | null;
 };
 
-export class SearchParams<Filter> {
+export class SearchParams<Filter = string> {
   protected _page: number;
   protected _perPage: number = 15;
   protected _sort: string | null;
@@ -110,7 +110,7 @@ export class SearchParams<Filter> {
   }
 }
 
-export class SearchResult<E extends Entity, Filter = string> {
+export class SearchResult<E extends Entity = Entity, Filter = string> {
   readonly items: E[];
   readonly total: number;
   readonly currentPage: number;
